@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0;
+        font-family: "Open Sans", sans-serif;
+        font-size: 14px;
+        background-color: #ffffc7;
+      }
+
+      h1 {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      #container {
+        position: relative;
+      }
+
+      #container canvas {
+        display: block;
+        margin: 0 auto;
+      }
+
+      #container svg {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      circle {
+        fill: yellow;
+      }
+      .annotation-note-bg {
+        fill: yellow;
+        fill-opacity: 0.9;
+      }
+      .annotation-note-title {
+        fill: black;
+      }
+      .annotation-note-label {
+        fill: black;
+      }
+
+      .annotation-connector .connector,
+      .annotation-note .note-line {
+        stroke-width: 2px;
+        stroke: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>The Pixelcabin Solar Calculator</h1>
+    <div id="container"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js"></script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/solar-calculator@0.3/dist/solar-calculator.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-annotation/2.3.2/d3-annotation.min.js"></script>
+    <script src="https://unpkg.com/spacetime"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
