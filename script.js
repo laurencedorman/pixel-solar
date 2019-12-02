@@ -12,7 +12,7 @@ function init() {
       response => response.json()
     ),
     d3.csv(
-      "https://gist.githubusercontent.com/laurencedorman/b6479c427e8ce5cb88759cc2506091db/raw/4e5ad06a32448a7d76013a39a3515b8553ae10ae/cabincrew.csv",
+      "https://gist.githubusercontent.com/laurencedorman/b6479c427e8ce5cb88759cc2506091db/raw/42d770e920d4882420438e3b6efea79e00b0c8c5/cabincrew.csv",
       d3.autoType
     )
   ]).then(([world, data]) => {
